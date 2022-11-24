@@ -1,0 +1,24 @@
+.PrimaryContainer{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+.title{
+    color: rgb(0, 153, 255);
+    text-align: left;
+    width: 50%;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.optionsSettings{
+    width: 50%;
+    float: right;
+}
