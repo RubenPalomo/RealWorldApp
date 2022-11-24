@@ -1,0 +1,46 @@
+.input-form{
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+.input-wrapper {
+    position: relative;
+  }
+  .input-wrapper:focus-within>input{
+    border: 2px solid blue;
+    border-radius: 2px;
+    
+  }
+  .input-wrapper:focus-within>input::placeholder{
+    color: transparent;
+    }
+  .input-wrapper:focus-within>label{
+    visibility: visible;
+  }
+  
+  input {
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: relative;
+    width: 200px;
+    margin: 10px;
+    line-height: 6ex;
+  }
+  input:focus-visible{
+    
+  }
+  
+  label {
+    color: blue;
+    visibility: hidden;
+    font-size: 7px;
+    position: absolute;
+    top: 1ex;
+    z-index: 1;
+    left: 3em;
+    background-color: white;
+    padding: 0 5px;
+  }
+
