@@ -1,0 +1,39 @@
+.nombreCliente {
+  display: flex;
+  text-align: left;
+  margin: 10px 20px;
+  font-size: 40px;
+}
+.divParent {
+  display: flex;
+  margin: 0px 5vw;
+  width: 80%;
+  padding: 5px 0px;
+  border: solid 1px black;
+}
+.divChild {
+  flex: 1;
+  // border: solid 1px black;
+}
+
+.showMoney {
+  text-align: center;
+  font-weight: 600;
+  font-size: 80px;
+}
+
+.balance {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+.incomeExpense {
+  height: 50%;
+}
+.expenses {
+  color: rgb(190, 0, 0);
+}
+.income {
+  color: rgb(0, 173, 0);
+}
