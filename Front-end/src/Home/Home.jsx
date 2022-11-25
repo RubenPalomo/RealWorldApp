@@ -19,15 +19,24 @@ function Home() {
         <h2 className="client">{nomCliente}</h2>
         <div className="money">${cant}</div>
       </div>
-      <div className={res}>{inc - out}</div>
-      <div className="income">{inc}</div>
-      <div className="expenses">-{out}</div>
+      <div className={res}>
+        <div className="text1">Balance:</div>
+        <div>{inc - out}</div>
+      </div>
+      <div className="income">
+        <div className="text">Income:</div>
+        <div>{inc}</div>
+      </div>
+      <div className="expenses">
+        <div className="text">Income:</div>
+        <div>-{out}</div>
+      </div>
 
       <div className="transaction">
         <table className="tableTransactions">
           <tr>
-            <td className="titulo">CANTIDAD</td>
-            <td className="titulo">ASUNTO</td>
+            <th className="titulo">CANTIDAD</th>
+            <th className="titulo">ASUNTO</th>
           </tr>
           <tr>
             <td className="cantidad">Cantidad</td>
