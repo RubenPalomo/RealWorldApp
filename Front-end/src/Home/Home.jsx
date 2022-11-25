@@ -1,26 +1,52 @@
-import React from 'react';
-import './Home.scss';
+import React from "react";
+import "./Home.scss";
 
 function Home() {
-  const inc = 200;
+  const nomCliente = "Maria Conde Castillo";
+  const cant = 12000;
+  const inc = 400;
   const out = 300;
+  let res;
+  if (inc - out < 0) {
+    res = "balance negative";
+  } else {
+    res = "balance positive";
+  }
 
   return (
-    <div>
-      <div className="divParent">
-        <div className="divChild">
-          <h2 className="nombreCliente">Maria Conde Castillo</h2>
-          <div className="showMoney">$12000</div>
-        </div>
-        <div className="divChild">
-          <div className="balance showMoney">{inc - out}</div>
-          <div className="divParent incomeExpense">
-            <div className="divChild balance income showMoney">{inc}</div>
-            <div className="divChild balance expenses showMoney">-{out}</div>
-          </div>
-        </div>
+    <div className="container">
+      <div className="divClient">
+        <h2 className="client">{nomCliente}</h2>
+        <div className="money">${cant}</div>
       </div>
-      <div></div>
+      <div className={res}>{inc - out}</div>
+      <div className="income">{inc}</div>
+      <div className="expenses">-{out}</div>
+
+      <div className="transaction">
+        <table className="tableTransactions">
+          <tr>
+            <td className="titulo">CANTIDAD</td>
+            <td className="titulo">ASUNTO</td>
+          </tr>
+          <tr>
+            <td className="cantidad">Cantidad</td>
+            <td className="asunto">Asunto</td>
+          </tr>
+          <tr>
+            <td className="cantidad">Cantidad</td>
+            <td className="asunto">Asunto</td>
+          </tr>
+          <tr>
+            <td className="cantidad">Cantidad</td>
+            <td className="asunto">Asunto</td>
+          </tr>
+          <tr>
+            <td className="cantidad">Cantidad</td>
+            <td className="asunto">Asunto</td>
+          </tr>
+        </table>
+      </div>
     </div>
   );
 }
