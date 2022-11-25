@@ -27,7 +27,12 @@ function Header() {
               backgroundColor: isActive ? "red" : "white",
             }}
           ></span>
-          <span className="line line2"></span>
+          <span
+            className="line line2"
+            style={{
+              backgroundColor: isActive ? "yellow" : "white",
+            }}
+          ></span>
           <span
             className="line line3"
             style={{
