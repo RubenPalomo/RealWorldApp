@@ -5,20 +5,25 @@
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    width: max-content;
+    margin-top: 30%;
+    width: inherit;
+    height: inherit;
 }
 .title{
     color: rgb(0, 153, 255);
-    text-align: left;
-    width: 50%;
+    width: max-content;
+    height: max-content;
+    margin: 0px 5vw;
+    font-size: 4vh;
 }
 .menu{
-    width: 50%;
+    width: max-content;
+    height: max-content;
     display: flex;
     flex-direction: column;
-    float: left;
+    flex-wrap: wrap;
 }
 .optionsSettings{
     width: 50%;
-    float: right;
+    height: 100%;
 }

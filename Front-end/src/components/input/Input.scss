@@ -2,6 +2,13 @@
     border: 1px solid lightgray;
     border-radius: 5px;
     outline: none;
+    position: relative;
+    width: 200px;
+    margin: 10px;
+    line-height: 6ex;
+}
+.input-form:focus-visible{
+  
 }
 .input-wrapper {
     position: relative;
@@ -18,17 +25,7 @@
     visibility: visible;
   }
   
-  input {
-    border: 1px solid gray;
-    border-radius: 6px;
-    position: relative;
-    width: 200px;
-    margin: 10px;
-    line-height: 6ex;
-  }
-  input:focus-visible{
-    
-  }
+
   
   label {
     color: blue;

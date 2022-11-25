@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Header.css";
-import logo from "./../../assets/logo.PNG";
-import alertIcon from "./../../assets/alert.png";
-import BurgerMenuItems from "./components/BurgerMenu/BurgerMenuItems";
+import logo from "../../assets/logo.PNG";
+import alertIcon from "../../assets/alert.png";
+import BurgerMenuItems from "../BurgerMenu/BurgerMenuItems";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);

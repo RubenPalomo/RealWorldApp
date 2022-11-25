@@ -1,4 +1,42 @@
-.optionSetting{
-    margin-top: 10px;
-    border-radius: 4px;
-}
+.optionSetting-form{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    width: 300px;
+    font-size: 20px;
+    margin: 10px;
+    line-height: 6ex;
+  }
+.optionSetting-wrapper {
+    position: relative;
+  }
+  .optionSetting-wrapper:focus-within>input{
+    border: 2px solid blue;
+    border-radius: 5px;
+    
+  }
+  .optionSetting-wrapper:focus-within>input::placeholder{
+    color: transparent;
+    }
+  .optionSetting-wrapper:focus-within>label{
+    visibility: visible;
+  }
+  
+
+  .optionSetting-form:focus-visible{
+    
+  }
+  
+  label {
+    color: blue;
+    visibility: hidden;
+    font-size: 10px;
+    position: absolute;
+    top: 0.5ex;
+    z-index: 1;
+    background-color: white;
+    padding: 0 5px;
+    margin: 0px 20px;
+  }
+
