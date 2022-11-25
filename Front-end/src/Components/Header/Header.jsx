@@ -49,15 +49,6 @@ function Header() {
         <BurgerMenuItems />
       </div>
     </div>
-    // <div className="header">
-    //     <MenuButton />
-    //     <img className="logo" src={logo}></img>
-    //     <h2 className="mainTitle">Real World App</h2>
-    //     <button className="newButton">$ NEW</button>
-    //     <button className="alertButton">
-    //         <img className="buttonIcon" src={alertIcon} />
-    //     </button>
-    // </div>
   );
 }
 
