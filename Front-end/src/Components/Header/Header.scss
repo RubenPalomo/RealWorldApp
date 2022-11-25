@@ -35,6 +35,10 @@ body {
   width: 5vh;
 }
 
+.alertButton img:hover {
+  filter: invert(0.3);
+}
+
 .newButton {
   position: absolute;
   top: 2vh;
@@ -45,6 +49,10 @@ body {
   color: white;
   border: 0;
   border-radius: 5px;
+}
+
+.newButton:hover {
+  filter: invert(0.1);
 }
 
 .title {
