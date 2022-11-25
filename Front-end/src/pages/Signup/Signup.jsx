@@ -1,7 +1,7 @@
 import React from "react";
 import "./Signup.scss";
 import Form from "../../Components/Form/Form";
-import img from "../../img/rwa.png";
+import img from "./../../assets/rwa.png";
 
 function Signup() {
   return (
