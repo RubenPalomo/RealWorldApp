@@ -4,6 +4,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import java.util.ArrayList;
+
 @Document
 public class User {
     @Id
@@ -12,12 +14,16 @@ public class User {
     private String firstName;
     @Field
     private String lastName;
+    @Field
+    private ArrayList transaction;
 
     public User(){}
 
-    public User(String firstName, String lastName) {
+    public User(String id, String firstName, String lastName, ArrayList transaction) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.transaction = transaction;
     }
 
     public String getId() {
@@ -44,8 +50,21 @@ public class User {
         this.lastName = lastName;
     }
 
+    public ArrayList getTransaction() {
+        return transaction;
+    }
+
+    public void setTransaction(ArrayList transaction) {
+        this.transaction = transaction;
+    }
+
     @Override
     public String toString() {
-        return String.format("User[id='%s', firstName='%s', lastName='%s']", id, firstName, lastName);
+        return "User{" +
+                "id='" + id + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", transaction=" + transaction +
+                '}';
     }
 }
