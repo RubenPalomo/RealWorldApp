@@ -1,8 +1,13 @@
-.mainForm{
-    align-items: center;
-    justify-content: center;
+.mainForm {
+  align-items: center;
+  justify-content: center;
 }
-input.submitBtn{
-    background-color: blue;
-    color: white;
+
+input.submitBtn {
+  background-color: blue;
+  color: white;
+}
+
+input {
+  text-indent: 5px;
 }

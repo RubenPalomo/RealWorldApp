@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./BurgerMenuItems.css";
+import "./BurgerMenuItems.scss";
 import menuLogo from "./../../../../assets/menu.png";
 
 function BurgerMenuItems() {
