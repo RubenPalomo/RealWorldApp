@@ -7,10 +7,12 @@ import Header from "./Components/Header/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Header />
-    <Signup />
-  </React.StrictMode>
+  <div className="indexDiv">
+    <React.StrictMode>
+      <Header />
+      <Signup />
+    </React.StrictMode>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,7 +1,7 @@
 .menu-items {
   padding-top: 10vh;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  height: 100%;
+  height: 100vh;
   width: 25%;
   transform: translate(-150%);
   flex-direction: column;
@@ -10,6 +10,7 @@
   transition: transform 0.5s ease-in-out;
   text-align: center;
   background-color: white;
+  border: 1px solid red;
 }
 
 .navbar .menu-items li {
