@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css";
+import "./Header.scss";
 import logo from "./../../assets/logo.PNG";
 import alertIcon from "./../../assets/alert.png";
 import BurgerMenuItems from "./components/BurgerMenu/BurgerMenuItems";
@@ -39,7 +39,7 @@ function Header() {
           <span className="title">
             <img className="icon" src={logo} />
           </span>
-          <span className="buttons">
+          <span>
             <button className="newButton">$ NEW</button>
             <button className="alertButton">
               <img width="30vw" src={alertIcon} />

@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  min-width: 550px;
 }
 
 .noMenuItems {
@@ -52,10 +53,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 50vw;
-}
-
-.buttons {
-  width: 25vw;
 }
 
 /*
@@ -148,4 +145,10 @@ body {
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 800px) {
+  .newButton {
+    right: 10vw;
+  }
 }
