@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  min-width: 550px;
 }
 
 .noMenuItems {
@@ -34,6 +35,10 @@ body {
   width: 5vh;
 }
 
+.alertButton img:hover {
+  filter: invert(0.3);
+}
+
 .newButton {
   position: absolute;
   top: 2vh;
@@ -46,16 +51,16 @@ body {
   border-radius: 5px;
 }
 
+.newButton:hover {
+  filter: invert(0.1);
+}
+
 .title {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 50vw;
-}
-
-.buttons {
-  width: 25vw;
 }
 
 /*
@@ -148,4 +153,10 @@ body {
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 800px) {
+  .newButton {
+    right: 10vw;
+  }
 }

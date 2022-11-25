@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Header.css";
-import logo from "../../assets/logo.PNG";
-import alertIcon from "../../assets/alert.png";
+import "./Header.scss";
+import logo from "./../../assets/logo.PNG";
+import alertIcon from "./../../assets/alert.png";
 import BurgerMenuItems from "../BurgerMenu/BurgerMenuItems";
 
 function Header() {
@@ -27,7 +27,12 @@ function Header() {
               backgroundColor: isActive ? "red" : "white",
             }}
           ></span>
-          <span className="line line2"></span>
+          <span
+            className="line line2"
+            style={{
+              backgroundColor: isActive ? "yellow" : "white",
+            }}
+          ></span>
           <span
             className="line line3"
             style={{
@@ -39,7 +44,7 @@ function Header() {
           <span className="title">
             <img className="icon" src={logo} />
           </span>
-          <span className="buttons">
+          <span>
             <button className="newButton">$ NEW</button>
             <button className="alertButton">
               <img width="30vw" src={alertIcon} />
