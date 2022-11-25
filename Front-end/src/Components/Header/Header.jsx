@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import logo from "./../../assets/logo.PNG";
 import alertIcon from "./../../assets/alert.png";
-import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
+import BurgerMenuItems from "./components/BurgerMenu/BurgerMenuItems";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -24,42 +24,29 @@ function Header() {
           <span
             className="line line1"
             style={{
-              backgroundColor: isActive ? "black" : "white",
+              backgroundColor: isActive ? "red" : "white",
             }}
           ></span>
           <span className="line line2"></span>
           <span
             className="line line3"
             style={{
-              backgroundColor: isActive ? "black" : "white",
+              backgroundColor: isActive ? "red" : "white",
             }}
           ></span>
         </div>
         <div className="noMenuItems">
-          <img className="icon" src={logo} />
-          <h2 className="mainTitle">Real World App</h2>
-          <button className="newButton">$ NEW</button>
-          <button>
-            <img className="alertButton" src={alertIcon} />
-          </button>
+          <span className="title">
+            <img className="icon" src={logo} />
+          </span>
+          <span className="buttons">
+            <button className="newButton">$ NEW</button>
+            <button className="alertButton">
+              <img width="30vw" src={alertIcon} />
+            </button>
+          </span>
         </div>
-        <div className="menu-items">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">My Account</a>
-          </li>
-          <li>
-            <a href="#">Bank Accounts</a>
-          </li>
-          <li>
-            <a href="#">Notifications</a>
-          </li>
-          <li>
-            <a href="#">Logout</a>
-          </li>
-        </div>
+        <BurgerMenuItems />
       </div>
     </div>
     // <div className="header">
