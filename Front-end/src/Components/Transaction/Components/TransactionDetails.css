@@ -1,0 +1,26 @@
+.mainTransactionDetailsBlock {
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 96%;
+  margin: auto;
+  margin-top: 1%;
+  height: 10vh;
+}
+.transactionChildBlock1 {
+  border-right: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+}
+.transactionChildBlock2 {
+  border-left: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+}

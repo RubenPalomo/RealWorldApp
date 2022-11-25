@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './Components/Header/Header';
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./Components/Header/Header";
+import Transaction from "./Components/Transaction/Transaction";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <Header />
       </header>
       <section>
-        <p>Pruebita</p>
+        <Transaction />
       </section>
     </div>
   );
