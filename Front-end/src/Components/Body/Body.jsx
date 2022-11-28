@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import UserSettings from "../../pages/UserSettings/UserSettings";
 import Signup from "../../pages/Signup/Signup";
 import Home from "../../pages/Home/Home";
+import Notifications from "../../pages/Notifications/Notifications";
 
 function Body(props) {
   return (
@@ -21,7 +22,7 @@ function Body(props) {
         ></Route>
         <Route
           path="/notifications"
-          element={<Signup functUseHeader={props.functUseHeader} />}
+          element={<Notifications functUseHeader={props.functUseHeader} />}
           exact
         ></Route>
         <Route

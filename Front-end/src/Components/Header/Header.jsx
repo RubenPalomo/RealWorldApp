@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.scss";
 import logo from "./../../assets/logo.PNG";
 import alertIcon from "./../../assets/alert.png";
+import { Link, Routes, Route } from "react-router-dom";
 import BurgerMenuItems from "../BurgerMenu/BurgerMenuItems";
 
 function Header(props) {
@@ -46,9 +47,9 @@ function Header(props) {
             </span>
             <span>
               <button className="newButton">$ NEW</button>
-              <button className="alertButton">
+              <Link to="/notifications" className="alertButton">
                 <img width="30vw" src={alertIcon} />
-              </button>
+              </Link>
             </span>
           </div>
           <BurgerMenuItems />

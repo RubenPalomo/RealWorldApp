@@ -1,7 +1,9 @@
 import React from "react";
 import "./Notifications.scss";
 
-function Notifications() {
+function Notifications(props) {
+  props.functUseHeader(true);
+
   return (
     <div>
       <div className="containerNotif">
