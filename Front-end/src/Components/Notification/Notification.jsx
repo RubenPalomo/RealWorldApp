@@ -14,7 +14,7 @@ function Notification(props) {
 
     <div className={isRead ? "notificationComponentMainDiv" : "notificationComponentMainDiv notRead"}>
         <div className='notificationComponentTextDiv'>Hi{props.text}</div>
-        <div className='notificationComponentImageDiv'><img src={isRead ? unreadIcon : readIcon} onClick={setRead}></img></div>
+        <div className='notificationComponentImageDiv'><img src={isRead ? unreadIcon : readIcon} onClick={setRead} width="48px"></img></div>
     </div>
     
     
