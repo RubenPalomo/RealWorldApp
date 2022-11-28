@@ -1,0 +1,19 @@
+.MainContainerBody{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    height: 450px;
+    width: 1080px;
+    padding: 30px;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: blue;
+}
+a:hover {
+    color: rgb(255, 187, 60);
+}

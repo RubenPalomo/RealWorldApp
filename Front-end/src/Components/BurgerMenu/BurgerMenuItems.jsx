@@ -1,24 +1,22 @@
-import React, { useState } from "react";
 import "./BurgerMenuItems.scss";
-import menuLogo from "./../../../../assets/menu.png";
 
 function BurgerMenuItems() {
   return (
     <div className="menu-items">
       <li>
-        <a href="#">Home</a>
+        <a href="/home">Home</a>
       </li>
       <li>
-        <a href="#">My Account</a>
+        <a href="/user">My Account</a>
       </li>
       <li>
-        <a href="#">Bank Accounts</a>
+        <a href="/bankaccounts">Bank Accounts</a>
       </li>
       <li>
-        <a href="#">Notifications</a>
+        <a href="/notifications">Notifications</a>
       </li>
       <li>
-        <a href="#">Logout</a>
+        <a href="/logout">Logout</a>
       </li>
     </div>
   );

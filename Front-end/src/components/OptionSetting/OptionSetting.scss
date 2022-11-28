@@ -1,31 +1,32 @@
-.input-form{
+.optionSetting-form{
     border: 1px solid lightgray;
     border-radius: 5px;
     outline: none;
     position: relative;
-    width: 200px;
+    width: 300px;
+    font-size: 20px;
     margin: 10px;
     line-height: 6ex;
-}
-.input-form:focus-visible{
-  
-}
-.input-wrapper {
+  }
+.optionSetting-wrapper {
     position: relative;
   }
-  .input-wrapper:focus-within>input{
+  .optionSetting-wrapper:focus-within>input{
     border: 2px solid blue;
     border-radius: 5px;
     
   }
-  .input-wrapper:focus-within>input::placeholder{
+  .optionSetting-wrapper:focus-within>input::placeholder{
     color: transparent;
     }
-  .input-wrapper:focus-within>label{
+  .optionSetting-wrapper:focus-within>label{
     visibility: visible;
   }
   
 
+  .optionSetting-form:focus-visible{
+    
+  }
   
   label {
     color: blue;

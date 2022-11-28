@@ -1,18 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import Signup from "./pages/Signup/Signup";
-import reportWebVitals from "./reportWebVitals";
-import Header from "./Components/Header/Header";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import { BrowserRouter as Router } from 'react-router-dom'
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <div className="indexDiv">
-    <React.StrictMode>
-      <Header />
-      <Signup />
-    </React.StrictMode>
-  </div>
+  <React.StrictMode>
+  <Router>
+    <App />
+  </Router>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
