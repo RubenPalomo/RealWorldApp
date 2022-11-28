@@ -1,0 +1,79 @@
+.mainTransactionBlock {
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 90vw;
+  margin: auto;
+  margin-top: 1vh;
+  height: 80vh;
+}
+.saldoBlock {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  left: 0;
+}
+.saldoTitle {
+  font-size: 150%;
+}
+.saldoAmount {
+  font-size: 350%;
+}
+.childBlock1 {
+  font-family: "Times New Roman", Times, serif;
+  border-left: 0;
+  border-right: 2px solid black;
+  background-color: rgb(201, 192, 253);
+  position: relative;
+  float: left;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.childBlock2 {
+  border-right: 0;
+  border-left: 2px solid black;
+  position: relative;
+  float: left;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.childBlock1-1 {
+  font-size: 150%;
+  border-top: 2px solid black;
+  padding-top: 2vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-right: 1px solid black;
+  width: 50%;
+  height: 50%;
+}
+.childBlock1-2 {
+  font-size: 150%;
+  border-top: 2px solid black;
+  padding-top: 2vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 1px solid black;
+  width: 50%;
+  height: 50%;
+}
+.noHayNa {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+}
+ul {
+  list-style-type: none;
+}
+.title {
+  border-bottom: 1px solid rgb(148, 148, 148);
+  width: 100%;
+}
