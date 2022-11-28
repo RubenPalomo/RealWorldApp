@@ -5,7 +5,7 @@ function OptionSetting(props) {
   if (props.editable) {
     return (
       <div className="optionSetting-wrapper">
-        <label>{props.name}</label>
+        <label className="optionSetting-form-label">{props.name}</label>
         <input
           className="optionSetting-form"
           type={props.type}

@@ -9,7 +9,9 @@ import Notification from "./components/Notification/Notification";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Notification />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 

@@ -5,11 +5,12 @@ import Switch from "react-switch";
 import img from "../../assets/UserSettings.png";
 import "./UserSettings.scss";
 
-function UserSettings() {
+function UserSettings(props) {
   const [checked, setChecked] = useState(false);
   const handleChange = (nextChecked) => {
     setChecked(nextChecked);
   };
+  props.functUseHeader(true);
   return (
     <div className="PrimaryContainer">
       <div className="menu">

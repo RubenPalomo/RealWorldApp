@@ -3,11 +3,16 @@
   justify-content: center;
 }
 
-input.submitBtn {
+.submitBtn {
   background-color: blue;
   color: white;
+  width: 100%;
 }
 
 input {
   text-indent: 5px;
+}
+.passwordLabel {
+  color: red;
+  font-size: 1vw;
 }

@@ -3,7 +3,8 @@ import "./Signup.scss";
 import Form from "../../components/Form/Form";
 import img from "./../../assets/rwa.png";
 
-function Signup() {
+function Signup(props) {
+  props.functUseHeader(false);
   return (
     <div className="mainDiv">
       <div className="secondDiv">

@@ -4,7 +4,7 @@ import "./Input.scss";
 function Input(props) {
   return (
     <div className="input-wrapper">
-      <label>{props.name}</label>
+      <label className="inputLabel">{props.name}</label>
       <input
         className="input-form"
         type={props.type}

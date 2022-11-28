@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.scss";
 
-function Home() {
+function Home(props) {
   const nomCliente = "Maria Conde Castillo";
   const cant = 12000;
   const inc = 400;
@@ -12,7 +12,7 @@ function Home() {
   } else {
     res = "balance positive";
   }
-
+  props.functUseHeader(true);
   return (
     <div className="container">
       <div className="divClient">
