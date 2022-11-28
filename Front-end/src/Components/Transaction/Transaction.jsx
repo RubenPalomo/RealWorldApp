@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Transaction.css";
-import TransactionDetails from "./Components/TransactionDetails";
+import TransactionDetails from "./components/TransactionDetails";
 
 function Transaction(props) {
   let transactions = props.transactionDetails;

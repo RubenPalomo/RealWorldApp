@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import Header from "./Components/Header/Header";
-import Transaction from "./Components/Transaction/Transaction";
+import Header from "./components/Header/Header";
+import Transaction from "./components/Transaction/Transaction";
 
 function App() {
   // const transactions = [];
