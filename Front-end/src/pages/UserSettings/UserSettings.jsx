@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import FormSettings from "../../Components/FormSettings/FormSettings";
-import ImageMenu from "../../Components/ImageMenu/ImageMenu";
+import FormSettings from "../../components/FormSettings/FormSettings";
+import ImageMenu from "../../components/ImageMenu/ImageMenu";
 import Switch from "react-switch";
 import img from "../../assets/UserSettings.png";
 import "./UserSettings.scss";
