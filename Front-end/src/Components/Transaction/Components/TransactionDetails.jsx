@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TransactionDetails.css";
 
-function TransactionDetails() {
+function TransactionDetails(props) {
   return (
     <div className="mainTransactionDetailsBlock">
-      <div className="transactionChildBlock1">Transaction Name</div>
-      <div className="transactionChildBlock2">69€</div>
+      <div className="transactionChildBlock1">{props.transaction}</div>
+      <div className="transactionChildBlock2">{props.amount} €</div>
     </div>
   );
 }
