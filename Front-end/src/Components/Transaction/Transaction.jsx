@@ -3,11 +3,12 @@ import "./Transaction.css";
 import TransactionDetails from "./Components/TransactionDetails";
 
 function Transaction(props) {
-  let [transactions, setTransactions] = useState(props.transactionDetails);
-  let [income, setIncome] = useState(props.income);
-  let [expenses, setExpenses] = useState(props.expenses);
-
-  if (transactions == 0) {
+  let transactions = props.transactionDetails;
+  let income = props.income;
+  let expenses = props.expenses;
+  console.log(transactions === 0);
+  console.log(transactions);
+  if (transactions.length === 0) {
     return (
       <div className="mainTransactionBlock">
         <div className="childBlock1">
@@ -20,18 +21,17 @@ function Transaction(props) {
           <div>
             <div className="childBlock1-1">
               <p className="title">INGRESOS</p>
-              <p>No hay na</p>
-              {/* <span>dinero</span> */}
+              <p>No Data</p>
             </div>
             <div className="childBlock1-2">
               <p className="title">GASTOS</p>
-              <p>No hay na</p>
+              <p>No Data</p>
             </div>
           </div>
         </div>
         <div className="childBlock2">
           <div>
-            <p>No hay na</p>
+            <p>No Data</p>
           </div>
         </div>
       </div>
