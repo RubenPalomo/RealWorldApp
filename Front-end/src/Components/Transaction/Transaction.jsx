@@ -4,6 +4,9 @@ import TransactionDetails from "./Components/TransactionDetails";
 
 function Transaction(props) {
   let [transactions, setTransactions] = useState(props.transactionDetails);
+  let [income, setIncome] = useState(props.income);
+  let [expenses, setExpenses] = useState(props.expenses);
+
   return (
     <div className="mainTransactionBlock">
       <div className="childBlock1">
@@ -15,12 +18,21 @@ function Transaction(props) {
         </div>
         <div>
           <div className="childBlock1-1">
-            <p>INGRESOS</p> <hr />
-            <span>dinero</span>
+            <p className="title">INGRESOS</p>
+            <ul>
+              {income.map((income, index) => (
+                <li key={index}>{income} €</li>
+              ))}
+            </ul>
+            {/* <span>dinero</span> */}
           </div>
           <div className="childBlock1-2">
-            <p>GASTOS</p> <hr />
-            <span>dinero</span>
+            <p className="title">GASTOS</p>
+            <ul>
+              {expenses.map((expenses, index) => (
+                <li key={index}>{expenses} €</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

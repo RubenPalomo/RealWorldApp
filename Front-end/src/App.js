@@ -5,6 +5,7 @@ import Header from "./Components/Header/Header";
 import Transaction from "./Components/Transaction/Transaction";
 
 function App() {
+  // const transactions = [];
   const transactions = [
     { transactionName: "Transaction1", amount: 50 },
     { transactionName: "Transaction2", amount: 100 },
@@ -18,7 +19,11 @@ function App() {
         <Header />
       </header>
       <section>
-        <Transaction transactionDetails={(transactions, income, expenses)} />
+        <Transaction
+          transactionDetails={transactions}
+          income={income}
+          expenses={expenses}
+        />
       </section>
     </div>
   );
