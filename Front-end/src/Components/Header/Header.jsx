@@ -3,6 +3,7 @@ import "./Header.scss";
 import logo from "./../../assets/logo.PNG";
 import alertIcon from "./../../assets/alert.png";
 import BurgerMenuItems from "../BurgerMenu/BurgerMenuItems";
+import { Link, Routes, Route } from "react-router-dom";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -46,9 +47,9 @@ function Header() {
           </span>
           <span>
             <button className="newButton">$ NEW</button>
-            <button className="alertButton">
+            <Link to="/notifications" className="alertButton">
               <img width="30vw" src={alertIcon} />
-            </button>
+            </Link>
           </span>
         </div>
         <BurgerMenuItems />
