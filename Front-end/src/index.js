@@ -4,13 +4,14 @@ import "./index.css";
 import Signup from "./pages/Signup/Signup";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./Components/Header/Header";
+import Home from "./Home/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div className="indexDiv">
     <React.StrictMode>
       <Header />
-      <Signup />
+      <Home />
     </React.StrictMode>
   </div>
 );
