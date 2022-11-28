@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FormSettings from "../../components/FormSettings/FormSettings";
 import ImageMenu from "../../components/ImageMenu/ImageMenu";
 import Switch from "react-switch";
+import img from "../../assets/UserSettings.png";
 import "./UserSettings.scss";
 
 function UserSettings() {
@@ -13,7 +14,7 @@ function UserSettings() {
     <div className="PrimaryContainer">
       <div className="menu">
         <div className="title">User Settings</div>
-        <ImageMenu urlImage="https://cdn2.iconfinder.com/data/icons/miscellaneous-set-3/512/ICON101-512.png" />
+        <ImageMenu urlImage={img} />
       </div>
       <div className="optionsSettings">
         <Switch
