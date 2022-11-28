@@ -1,29 +1,32 @@
-.PrimaryContainer{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30%;
-    width: inherit;
-    height: inherit;
+.PrimaryContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30%;
+  width: inherit;
+  height: inherit;
 }
-.title{
-    color: rgb(0, 153, 255);
-    width: max-content;
-    height: max-content;
-    margin: 0px 5vw;
-    font-size: 4vh;
+.title {
+  color: rgb(0, 153, 255);
+  width: max-content;
+  height: max-content;
+  margin: 0px 5vw;
+  font-size: 4vh;
 }
-.menu{
-    width: max-content;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.menu {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.optionsSettings{
-    width: 50%;
-    height: 100%;
+.optionsSettings {
+  width: 50%;
+  height: 100%;
+}
+.switchBtn {
+  margin-left: 1vw;
 }

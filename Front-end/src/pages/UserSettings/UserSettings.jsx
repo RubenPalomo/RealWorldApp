@@ -18,6 +18,7 @@ function UserSettings() {
       </div>
       <div className="optionsSettings">
         <Switch
+          className="switchBtn"
           checked={checked}
           onChange={handleChange}
           handleDiameter={28}
@@ -84,7 +85,6 @@ function UserSettings() {
               📝
             </div>
           }
-          className="react-switch"
           id="small-radius-switch"
         />
         <FormSettings editable={checked} />

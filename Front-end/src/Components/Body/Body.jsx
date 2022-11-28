@@ -9,7 +9,8 @@ function Body() {
     <div className="MainContainerBody">
       <Routes>
         <Route path="" element={<Signup />} exact></Route>
-        <Route path="*" element={<UserSettings />} exact></Route>
+        <Route path="*" element={<Signup />} exact></Route>
+        <Route path="/home" element={<Signup />} exact></Route>
         <Route path="/user" element={<UserSettings />} exact></Route>
       </Routes>
     </div>
