@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../input/Input";
+import Input from "../Input/Input";
 import "./Form.scss";
 
 function Form(props) {
