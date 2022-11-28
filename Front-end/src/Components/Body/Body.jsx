@@ -3,6 +3,7 @@ import "./Body.scss";
 import { Routes, Route } from "react-router-dom";
 import UserSettings from "../../pages/UserSettings/UserSettings";
 import Signup from "../../pages/Signup/Signup";
+import Home from "../../Home/Home";
 
 function Body() {
   return (
@@ -10,7 +11,7 @@ function Body() {
       <Routes>
         <Route path="" element={<Signup />} exact></Route>
         <Route path="*" element={<Signup />} exact></Route>
-        <Route path="/home" element={<Signup />} exact></Route>
+        <Route path="/home" element={<Home />} exact></Route>
         <Route path="/user" element={<UserSettings />} exact></Route>
       </Routes>
     </div>
