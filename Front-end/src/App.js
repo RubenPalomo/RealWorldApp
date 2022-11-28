@@ -13,6 +13,7 @@ function App() {
   ];
   const income = [200, 300, 400];
   const expenses = [20, 30, 40];
+
   return (
     <div className="App">
       <header className="App-header">

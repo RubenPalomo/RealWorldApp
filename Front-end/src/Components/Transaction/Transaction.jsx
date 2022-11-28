@@ -7,6 +7,37 @@ function Transaction(props) {
   let [income, setIncome] = useState(props.income);
   let [expenses, setExpenses] = useState(props.expenses);
 
+  if (transactions == 0) {
+    return (
+      <div className="mainTransactionBlock">
+        <div className="childBlock1">
+          <div className="saldoBlock">
+            <p className="saldoTitle">
+              <u>SALDO TOTAL</u>
+            </p>
+            <p className="saldoAmount">0 €</p>
+          </div>
+          <div>
+            <div className="childBlock1-1">
+              <p className="title">INGRESOS</p>
+              <p>No hay na</p>
+              {/* <span>dinero</span> */}
+            </div>
+            <div className="childBlock1-2">
+              <p className="title">GASTOS</p>
+              <p>No hay na</p>
+            </div>
+          </div>
+        </div>
+        <div className="childBlock2">
+          <div>
+            <p>No hay na</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="mainTransactionBlock">
       <div className="childBlock1">
@@ -14,7 +45,11 @@ function Transaction(props) {
           <p className="saldoTitle">
             <u>SALDO TOTAL</u>
           </p>
-          <p className="saldoAmount">1037827</p>
+          <p className="saldoAmount">
+            {income.reduce((a, b) => a + b, 0) -
+              expenses.reduce((a, b) => a + b, 0)}
+            &nbsp;€
+          </p>
         </div>
         <div>
           <div className="childBlock1-1">
