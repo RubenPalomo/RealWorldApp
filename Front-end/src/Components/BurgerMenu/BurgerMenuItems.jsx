@@ -10,7 +10,7 @@ function BurgerMenuItems() {
         <a href="/user">My Account</a>
       </li>
       <li>
-        <a href="/bankaccounts">Bank Accounts</a>
+        <a href="/transactions">Bank Accounts</a>
       </li>
       <li>
         <a href="/notifications">Notifications</a>

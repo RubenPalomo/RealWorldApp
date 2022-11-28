@@ -5,6 +5,7 @@ import UserSettings from "../../pages/UserSettings/UserSettings";
 import Signup from "../../pages/Signup/Signup";
 import Home from "../../pages/Home/Home";
 import Notifications from "../../pages/Notifications/Notifications";
+import Transactions from "../../pages/Transactions/Transactions";
 
 function Body(props) {
   return (
@@ -26,8 +27,8 @@ function Body(props) {
           exact
         ></Route>
         <Route
-          path="/transaction"
-          element={<Signup functUseHeader={props.functUseHeader} />}
+          path="/transactions"
+          element={<Transactions functUseHeader={props.functUseHeader} />}
           exact
         ></Route>
         <Route
